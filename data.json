@@ -1,0 +1,77 @@
+{
+    "robots": [
+        {"nombre": "Atom", "detalles": "Resistencia y capacidad de aprendizaje"},
+        {"nombre": "Zeus", "detalles": "Máxima fuerza y velocidad, invicto en el campeonato"}, 
+        {"nombre": "Noisy Boy", "detalles": "Potencia ofensiva y estilo llamativo"}, 
+        {"nombre": "Ambush", "detalles": "Robot de segunda mano, poca resistencia"}, 
+        {"nombre": "Midas", "detalles": "Gran fuerza bruta, estilo callejero"}, 
+        {"nombre": "Metro", "detalles": "Resistencia física, robot de entrenamiento"}, 
+        {"nombre": "Twin Cities", "detalles": "Dos cabezas, gran capacidad de ataque simultáneo"}, 
+        {"nombre": "Blacktop", "detalles": "Estilo rudo, robot de peleas clandestinas"}, 
+        {"nombre": "Axelrod", "detalles": "Robot de exhibición, estilo técnico"}, 
+        {"nombre": "Six Shooter", "detalles": "Rapidez y ataques múltiples"}, 
+        {"nombre": "Blue Bot", "detalles": "Robot genérico de peleas menores"}, 
+        {"nombre": "Fatboy", "detalles": "Gran tamaño y fuerza, poca agilidad"}, 
+        {"nombre": "Albino", "detalles": "Diseño único, resistencia media"}, 
+        {"nombre": "Bash", "detalles": "Estilo agresivo"}, 
+        {"nombre": "Bricks", "detalles": "Gran resistencia"}, 
+        {"nombre": "Gambit", "detalles": "Movimientos impredecibles"}, 
+        {"nombre": "Gridlock", "detalles": "Fuerza mecánica"}, 
+        {"nombre": "HollowJack", "detalles": "Estilo intimidante"}, 
+        {"nombre": "Nitro", "detalles": "Velocidad explosiva"}, 
+        {"nombre": "Shogun", "detalles": "Inspiración samurái"}, 
+        {"nombre": "Tackle", "detalles": "Ataques de impacto"}, 
+        {"nombre": "Tri-Tip", "detalles": "Diseño triangular"}, 
+        {"nombre": "Vandal", "detalles": "Estilo destructivo"}, 
+        {"nombre": "Visualizer", "detalles": "Sistema de análisis"}, 
+        {"nombre": "Wheeled Bot", "detalles": "Movilidad rápida"}
+    ],
+    "armas_equipables": [
+        {"nombre": "Puños reforzados", "tipo": "ofensivo"}, 
+        {"nombre": "Martillo hidráulico", "tipo": "ofensivo"}, 
+        {"nombre": "Cañón láser", "tipo": "ofensivo"}, 
+        {"nombre": "Lanzallamas", "tipo": "ofensivo"}, 
+        {"nombre": "Sierra circular", "tipo": "ofensivo"}, 
+        {"nombre": "Arma de impacto giratorio", "tipo": "ofensivo"}, 
+        {"nombre": "Misiles de corto alcance", "tipo": "ofensivo"}, 
+        {"nombre": "Electroshock", "tipo": "ofensivo"}, 
+        {"nombre": "Escudo de energía", "tipo": "defensivo"}, 
+        {"nombre": "Blindaje reforzado", "tipo": "defensivo"}, 
+        {"nombre": "Campo magnético protector", "tipo": "defensivo"}, 
+        {"nombre": "Placas de titanio", "tipo": "defensivo"}, 
+        {"nombre": "Sistema de evasión automática", "tipo": "defensivo"}, 
+        {"nombre": "Absorción de impactos", "tipo": "defensivo"}, 
+        {"nombre": "Sensores ópticos avanzados", "tipo": "soporte"}, 
+        {"nombre": "Radar de proximidad", "tipo": "soporte"}, 
+        {"nombre": "Sistema de cámaras HD", "tipo": "soporte"}, 
+        {"nombre": "Drones de reconocimiento", "tipo": "soporte"}, 
+        {"nombre": "IA táctica", "tipo": "soporte"}, 
+        {"nombre": "Sistema de comunicación encriptada", "tipo": "soporte"}, 
+        {"nombre": "Detector de energía enemiga", "tipo": "soporte"}, 
+        {"nombre": "Iluminación UV", "tipo": "especial"}, 
+        {"nombre": "Iluminación infrarroja", "tipo": "especial"}, 
+        {"nombre": "Generador de niebla", "tipo": "especial"}, 
+        {"nombre": "Campo de gravedad variable", "tipo": "especial"}, 
+        {"nombre": "Sistema de hologramas distractores", "tipo": "especial"}
+    ],
+    "exclusividades_armas" : [
+        {"arma1": "Lanzallamas", "arma2": "Sensores ópticos avanzados", "razón": "El fuego bloquea la visión de los sensores"},
+        {"arma1": "Cañón láser", "arma2": "Generador de niebla", "razón": "La niebla impide la precisión del láser"},
+        {"arma1": "Martillo hidráulico", "arma2": "Escudo de energía", "razón": "El escudo absorbe el impacto, no pueden coexistir"},
+        {"arma1": "Electroshock", "arma2": "Campo magnético protector", "razón": "El campo anula la descarga eléctrica"},
+        {"arma1": "Blindaje reforzado", "arma2": "Sistema de evasión automática", "razón": "El blindaje pesado impide la agilidad"},
+        {"arma1": "Placas de titanio", "arma2": "Absorción de impactos", "razón": "Ambos ocupan el mismo sistema estructural"},
+        {"arma1": "Drones de reconocimiento", "arma2": "Iluminación infrarroja", "razón": "La luz IR interfiere con los drones"}, 
+        {"arma1": "Iluminación UV", "arma2": "Iluminación infrarroja", "razón": "Solo puede usarse un tipo de iluminación a la vez"}
+],
+
+
+
+
+
+
+    "extras": [
+    {"arma1": "IA táctica", "arma2": "Operador humano remoto", "razón": "El control no puede ser simultáneo humano e IA"},
+    {"arma1": "Arena con obstáculos móviles", "arma2": "Campo de gravedad variable", "razón": "La arena no soporta ambas configuraciones"}
+]
+}
