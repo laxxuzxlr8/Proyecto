@@ -1,6 +1,24 @@
 import streamlit as st
 
 
+# --- #: Presentación Lobby :# --- #
+
+def cambiar_fondo(): st.markdown( """ <style> .stApp { background-image: url("images\fondo.png"); background-attachment: fixed; background-size: cover; background-repeat: no-repeat; background-position: center; } </style> """, unsafe_allow_html=True )
+cambiar_fondo()
+
+st.title(
+    body=":red[*World Robot Boxing*]",
+    anchor=False,
+    text_alignment="center"
+)
+st.subheader(
+    body=":blue[|Planificador de Combates|]",
+    anchor=False,
+    text_alignment="center")
+st.divider()
+
+
+
 # --- #: Declaración de Multipáginas :# --- #
 
 acerca_de = st.Page(
@@ -38,17 +56,7 @@ navegacion = st.navigation({
     "Catálogo":[robots, armas]
     })
 
+st.logo("images/logo.png", size="large", link="https://gigantes-de-acero.fandom.com/es/wiki/World_Robot_Boxing#:~:text=World%20Robot%20Boxing%20es%20una,los%20que%20participan%20los%20robots.")
+
 navegacion.run()
 
-# --- #: Presentación Lobby :# --- #
-
-st.title(
-    body=":red[*World Robot Boxing*]",
-    anchor=False,
-    text_alignment="center"
-)
-st.subheader(
-    body="Planificador de Combates",
-    anchor=False,
-    text_alignment="center")
-st.divider()

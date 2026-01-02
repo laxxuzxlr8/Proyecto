@@ -1,6 +1,6 @@
 import json
 import os
-
+import streamlit as st
 # --- #: Rutas de Base de Datos :# --- #
 
 RUTA_INVENTARIO = "data/inventario.json"
@@ -45,3 +45,20 @@ def guardar_combates():           # Guardar Combates #
     }
     with open(RUTA_COMBATES, "w") as f:
         json.dump(data, f, indent=4)
+        
+# --- #: Justificar Texto con sangría :# --- #
+
+def mostrar_texto(texto: str, sangria: str = "40px"):
+    """ 
+    Muestra texto en Streamlit con justificación y sangría. 
+    Args: 
+    texto (str): El contenido que quieres mostrar. 
+    sangria (str): Valor de sangría (ej. '40px', '2em'). Por defecto 40px. 
+    """ 
+    html = f""" 
+    <p style="text-align: justify; text-indent: {sangria};"> 
+    {texto} 
+    </p> 
+    """ 
+    st.markdown(html, unsafe_allow_html=True)
+    
